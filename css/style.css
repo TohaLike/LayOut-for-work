@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    margin-left: 360px;
+    margin-right: 360px;
+    background-color: #C0DBD9;
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Блок Header */
+.header {
+    background-color: #7FAFF6;
+    padding: 38px 30px;
+}
+
+/* Работа Pop-Up */
+.pop-up {
+    padding: 8px 15px;
+    font-size: 20px; 
+    border-radius: 5px;
+    background-color: #A5C7F9;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    padding: 20px;
+}
+
+.btn-closed {
+    margin-left: 60px;
+}
+
+.closed {
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #7FAFF6;
+}
+
+#modal-container:not(:target) {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+#modal-container:target {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s, visibility 1s;
+}
+
+/* Блоки */
+.block1 {
+    background-color: #B3F95A;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-gap: 15px;
+}
+
+.item {
+    background-color: #8AD191;
+    font-size: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 68px;
+}
+
+.one {
+    grid-column: 1/5;
+}
+
+.two {
+    grid-column: 5/11;
+}
+
+.four {
+    grid-column: 1/11;
+}
+
+.block2 {
+    background-color: #88B5BF;
+    margin-top: 15px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 199px;
+    padding: 30px;
+}
+
+.block {
+    background-color: #0D89B0;
+}
+
+.six {
+    grid-column: 1/4;
+}
+
+.seven {
+    grid-column: 4/7;
+}
+
+.eight {
+    grid-column: 7/10;
+}
+
+.nine {
+    grid-column: 10/13;
+}
+
+.frame2 {
+    background-color: #0D89B0;
+}
+
+/* Блок Footer */
+.footer {
+    background-color: #7FAFF6;
+    margin-top: 100px;
+    height: 100px;
+}
